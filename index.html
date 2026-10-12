@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knowledge Quiz</title>
+    <style>
+        body { font-family: 'Helvetica Neue', sans-serif; max-width: 600px; margin: 2rem auto;}
+        .question-card { background: #f4f4f4; padding: 15px; margin-bottom: 15px;}
+        .question-card.correct { border-left-color: #28a745; background: #e8f5e9;}
+        .question-card.incorrect { border-left-color: #dc3545; background: #f8f9fa; }
+        input[type="text"] { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 10px 20px; cursor: pointer; border: none; background: #28a745; color: white; border-radius: 4px; }
+        .feedback { margin-top: 10px; color: #333; font-size: 14px; }
+
+
+    </style>
+</head>
+<body>
+   <h1>Pop Quiz!</h1> 
+   <p>Answer the questions below to test your knowledge.</p>
+   <div id="quiz-container"></div>
+
+   <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafe Order</title>
+    <style>
+        body {font-family: Arial, sans-serif; max-width: 600px; margin: 2rem auto;}
+        .menu-item, .cart-item { display: flex; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ccc;}
+        button { padding: 5px 10px; cursor: pointer;}
+        #cart-section { margin-top: 30px; padding: 20px; background: #f9f9f9;}
+        .promo-container {margin-top: 15px; padding-top: 15px; border-top: 2px dashed #ccc;}
+        #promo-input {padding: 5px;}
+        .success { color: green; font-weight: bold;}
+        .error { color: red; font-weight: bold;}
+    </style>
+</head>
+<body>
+    <h1>Cafe Menu</h1>
+    <div id = "menu-container"></div>
+    <div id = "cart-section">
+        <h2>Your Cart</h2>
+        <div id = "cart-items"></div>
+        <div class = "promo-container">
+            <input type = "text" id = "promo-input" placeholder = "Enter promo code">
+            <button id = "apply-promo">Apply</button>
+            <p id = "promo-message"></p>
+        </div>
+        <h3>Total: $<span id = "total-price">0.00</span></h3>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
